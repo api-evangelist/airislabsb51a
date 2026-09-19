@@ -1,0 +1,84 @@
+generated: '2026-09-19'
+method: probed
+source: live GET of /.well-known/* on every host the record knows (registrable domain + www); no API, docs or MCP host exists
+  for this provider (api., docs., developer., mcp., app., status., trust.airis-labs.com all NXDOMAIN)
+result: 'no well-known documents served: every path on both hosts returned 404. No WellKnown or SecurityTxt pointer is emitted
+  because nothing was served.'
+hosts:
+- host: airis-labs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/mcp.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  note: apex root 301s to www.airis-labs.com, but /.well-known/* paths on the apex answer 404 directly (Webflow host)
+- host: www.airis-labs.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/oauth-protected-resource
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null
+  - path: /.well-known/mcp.json
+    status: 404
+    content_type: text/html; charset=utf-8
+    file: null

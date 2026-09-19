@@ -1,0 +1,23 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://www.airis-labs.com/information/privacy-notice
+note: >-
+  Harvest only. Airis Labs publishes a five-page Webflow marketing site (home, about, get-a-demo,
+  privacy notice, terms of use) and no docs, trust, security or legal sub-site. Conventional paths
+  probed live on 2026-09-19 all returned 404: /accessibility, /accessibility/vpat, /legal/subprocessors,
+  /legal/dpa, /privacy/requests, /transparency, /trust, /security, /security/sbom, /docs/data-residency,
+  /ai, /ai/transparency, /legal/report-content. The about page states "Customer-controlled data.
+  Self-hosted deployment. Designed for classified, disconnected, and sovereign environments" but names
+  no regions and publishes no data-residency documentation, so data_residency is NOT recorded.
+  Global Privacy Control is not mentioned anywhere in the privacy notice, so global_privacy_control
+  is NOT recorded.
+signals:
+  data_subject_request:
+    url: https://www.airis-labs.com/information/privacy-notice
+    channel: mailto:legal@airis-labs.com
+    note: >-
+      The privacy notice (AI RIS Labs Ltd. as data controller) enumerates GDPR/UK GDPR and US state
+      rights - access, correction, deletion, withdraw consent, opt-out of sale/targeted advertising,
+      object, restrict, portability, appeal - and names legal@airis-labs.com as the contact for
+      exercising them. No web form or API endpoint is published.
