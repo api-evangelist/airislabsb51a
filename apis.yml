@@ -24,10 +24,10 @@ tags:
 - Homeland Security
 - Public Safety
 - Video Intelligence
-- Computer-Vision
+- Computer Vision
 - Artificial Intelligence
 - Intelligence Analysis
-- Agentic AI
+- AI Agents
 tags_raw:
 - Company
 - Defense
@@ -38,6 +38,7 @@ tags_raw:
 - Artificial Intelligence
 - Intelligence Analysis
 - Agentic AI
+- Computer-Vision
 apis: []
 maintainers:
 - FN: Kin Lane
